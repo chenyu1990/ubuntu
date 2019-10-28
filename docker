@@ -1,0 +1,9 @@
+apt update
+apt install -y curl wget net-tools vim
+
+cat > ~/.inputc << EOF
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+set show-all-if-ambiguous on
+set completion-ignore-case on
+EOF
