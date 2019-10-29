@@ -16,3 +16,8 @@ mkdir -p ~/.ssh
 cat > ~/.ssh/authorized_keys << EOF
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC+Ic9Tp/UsWO84SueqCrenJcJiomly15GyHDsmwBnodEEdlzoJ7h0WVX0p3+u82eYfFRx/wOFHmahdsDBtD0DIFRP/PbH6AhgugZKHXk2If/7W+jPA2SpBykjOs+bDjsiQDREd6n6TnFcJm50QiCFOXhgdozFy2oSPt/Lbyp1qmv6syUpJEEqfdhuPVeTM38Pm3vzc2Wwd7mN6lXzSzOl/DhrGlOJtMTEuizQly9rA5tyb8JvpyAkWKjMNtYC9MgcKZxFwlbULNe7pmixUsXBHALwJ3R77qoXg6q57j7lBAyOC/vekembiva41vOs9SQ2JVPqRa36aSTsx3EO1x5Lv chenyu1990
 EOF
+
+# MySQL
+apt install mysql-client-5.7 -y
+mysql_config_editor set --login-path=root  --user=root --password
+
