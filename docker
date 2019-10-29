@@ -1,7 +1,7 @@
 apt update
 apt install -y curl wget net-tools vim
 
-cat > ~/.inputc << EOF
+cat > ~/.inputrc << EOF
 "\e[A": history-search-backward
 "\e[B": history-search-forward
 set show-all-if-ambiguous on
